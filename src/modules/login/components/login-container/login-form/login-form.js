@@ -23,7 +23,7 @@ const LoginForm = ({ t, isSubmitting, handleSubmit, error }) => {
         placeholder={t("login-form.placeholder.email")}
         autoComplete="email"
         className={"login-input gv-text-field"}
-        CustomComponent={GVTextField}
+        component={GVTextField}
       />
       <GVFormikField
         id={"loginPassword"}
@@ -33,7 +33,7 @@ const LoginForm = ({ t, isSubmitting, handleSubmit, error }) => {
         autoComplete="current-password"
         className={"login-input gv-text-field"}
         adornment={<a href={FORGOT_PASSWORD_ROUTE}>{t("login-form.forgot")}</a>}
-        CustomComponent={GVTextField}
+        component={GVTextField}
       />
       <div className={"form__error"}>{error}</div>
       <GVButton
